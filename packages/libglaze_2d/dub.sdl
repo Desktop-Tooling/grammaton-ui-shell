@@ -1,0 +1,8 @@
+﻿name "libglaze_2d"
+description "2D graphics abstraction (Blend2D) — Phase 3 stub"
+authors "AMDphreak"
+license "MIT"
+targetType "library"
+targetPath "../../bin"
+sourcePaths "source"
+importPaths "source"

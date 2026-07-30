@@ -1,0 +1,8 @@
+﻿name "libshell_bridge"
+description "OS / Erlang IPC and raw Win32/X11 bindings — Phase 4 stub"
+authors "AMDphreak"
+license "MIT"
+targetType "library"
+targetPath "../../bin"
+sourcePaths "source"
+importPaths "source"

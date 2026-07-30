@@ -1,0 +1,19 @@
+﻿name "libbeam_d"
+description "Erlang-style @nogc actor runtime: M:N fiber scheduler and MPSC mailboxes"
+authors "AMDphreak"
+license "MIT"
+targetType "library"
+targetPath "../../bin"
+sourcePaths "source"
+importPaths "source"
+configuration "library" {
+    targetType "library"
+}
+configuration "unittest" {
+    targetType "executable"
+    targetName "libbeam_d-test"
+    targetPath "../../bin"
+    sourcePaths "source" "tests"
+    importPaths "source"
+    mainSourceFile "tests/app.d"
+}
