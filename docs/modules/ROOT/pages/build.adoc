@@ -1,0 +1,33 @@
+= Build
+:description: How to build and test Actor Shell with DUB.
+
+Requirements: DMD or LDC2, and DUB.
+
+== Test the actor runtime
+
+Phase 1 focus is `libbeam_d`.
+
+[source,powershell]
+----
+dub test :libbeam_d
+----
+
+== Build the shell stub
+
+[source,powershell]
+----
+dub build
+----
+
+The workspace root `dub.sdl` produces `bin/actor-shell` (or `bin/actor-shell.exe` on Windows).
+Graphics and shell UI packages are stubs until later phases.
+
+== Workspace layout
+
+[source]
+----
+packages/libbeam_d/       Phase 1–2 runtime
+packages/libglaze_2d/     Phase 3 stub
+packages/libshell_bridge/ Phase 4 stub
+packages/actor_shell/     Phase 5 stub app
+----

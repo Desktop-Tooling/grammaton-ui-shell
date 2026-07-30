@@ -1,0 +1,12 @@
+= 2026-07-30 — OpenShellOrg home and Antora docs
+
+== Summary
+
+Homed the repository under OpenShellOrg and published a Diátaxis-shaped Antora component so the project shows up in the assembled org docs site.
+
+== Changes
+
+* Remote and disk path: `openshellorg/actor-shell` (was a local-only AMDphreak folder; no prior GitHub remote)
+* Antora component under `docs/` (overview, architecture, build, status, design brief)
+* Changelog timeline aligned with sibling OpenShellOrg repos; detail notes under `changelog-details/`
+* README points at Antora pages and related org projects

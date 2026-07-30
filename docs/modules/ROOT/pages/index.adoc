@@ -1,0 +1,28 @@
+= Actor Shell
+:description: Non-frustrating Windows/Linux UI shell on an Erlang-style actor runtime in native D.
+
+Non-frustrating Windows/Linux UI shell built on an Erlang-style actor runtime in native D.
+
+Every UI component is an isolated lightweight process (fiber) under a supervision tree, so one stalled widget cannot freeze the shell.
+
+== Goal
+
+Eliminate UI stutter and hangs without giving up a native, statically linked stack.
+Phase 1 delivers the `@nogc` actor runtime (`libbeam_d`); graphics, OS bridge, and shell UI follow in later phases.
+
+== In this component
+
+* xref:architecture.adoc[Architecture] — four packages and phase plan
+* xref:build.adoc[Build] — DUB test and build
+* xref:status.adoc[Status] — what exists today
+* xref:design-brief.adoc[Design brief] — condensed original brief (full archive in-repo)
+
+== Related
+
+* xref:shell-architecture::index.adoc[shell-architecture] — structured-shell thesis
+* xref:open-shell-org::ecosystem.adoc[OpenShellOrg ecosystem]
+* https://github.com/openshellorg/actor-shell[Source on GitHub]
+
+== License
+
+MIT

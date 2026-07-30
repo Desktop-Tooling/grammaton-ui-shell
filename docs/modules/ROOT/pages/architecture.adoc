@@ -1,0 +1,45 @@
+= Architecture
+:description: Package layout and implementation phases for Actor Shell.
+
+Actor Shell is a DUB workspace with four packages.
+The runtime is intentionally independent of graphics and OS windowing.
+
+== Packages
+
+[cols="1,3"]
+|===
+| Package | Role
+
+| `libbeam_d`
+| Core actor runtime: M:N fiber scheduler, lock-free MPSC mailbox, supervision (Phase 1–2)
+
+| `libglaze_2d`
+| 2D graphics abstraction (Blend2D bindings, command batching) — Phase 3
+
+| `libshell_bridge`
+| OS / Erlang IPC and raw Win32/X11 bindings — Phase 4
+
+| `actor_shell`
+| Shell executable composing the libraries — Phase 5
+|===
+
+== Phases
+
+. *Phase 1* — Fiber scheduler + actor mailbox (`libbeam_d`)
+. *Phase 2* — Supervisor linking / restart strategies (`libbeam_d`)
+. *Phase 3* — Blend2D / `libglaze_2d`
+. *Phase 4* — `libshell_bridge` IPC + OS bindings
+. *Phase 5* — ActorShell UI composition
+
+== Constraints (runtime)
+
+* `@nogc` actor core; no UI or graphics imports in `libbeam_d`
+* Immutable messaging across actors for zero-copy passing
+* Prefer native `extern(C)` syscalls over heavy wrapper libraries
+* Unavoidable C/C++ (for example Blend2D) must be statically linked
+
+== Performance targets
+
+* Frame budget under 6.9 ms (144 Hz)
+* Sub-millisecond actor message delivery for input paths
+* Non-blocking responsiveness under background I/O load

@@ -1,0 +1,11 @@
+﻿= 2026-07-08 — Project bootstrap (Phase 1)
+
+== Summary
+
+Scaffolded the four-package layout from the design brief and landed a working Phase 1 actor runtime.
+
+== Changes
+
+* `libbeam_d`: scheduler, mailbox, actor spawn/send/receive, reduction-based preemption hooks
+* Package stubs for graphics, OS bridge, and shell app
+* Docs: README, changelog, original idea markdown under `docs/ideas/`

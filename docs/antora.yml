@@ -1,0 +1,6 @@
+name: actor-shell
+title: Actor Shell
+version: ~
+start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/nav.adoc

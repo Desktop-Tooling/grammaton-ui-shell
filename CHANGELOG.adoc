@@ -1,0 +1,11 @@
+﻿= Changelog
+:toc:
+
+All notable changes to this project will be documented here.
+
+For longer narratives, see link:changelog-details/[changelog-details/].
+
+== Timeline
+
+* 2026-07-30 — link:changelog-details/2026-07-30%20-%20openshellorg%20home%20and%20antora%20docs.adoc[OpenShellOrg home and Antora docs] — repo under `openshellorg/actor-shell`; Diátaxis Antora component; changelog timeline.
+* 2026-07-08 — link:changelog-details/2026-07-08%20-%20project%20bootstrap%20phase%201.adoc[Project bootstrap (Phase 1)] — monorepo scaffold; `libbeam_d` fiber scheduler + MPSC mailbox; graphics/bridge/shell stubs; design brief archived.

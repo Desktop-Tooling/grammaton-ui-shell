@@ -1,0 +1,64 @@
+﻿= Actor Shell
+:toc:
+
+Non-frustrating Windows/Linux UI shell built on an Erlang-style actor runtime in native D.
+
+== Goal
+
+Eliminate UI stutter and hangs by treating every UI component as an isolated lightweight process (fiber) under a supervision tree.
+
+Docs (Antora): link:docs/modules/ROOT/pages/index.adoc[overview] · link:docs/modules/ROOT/pages/architecture.adoc[architecture] · link:docs/modules/ROOT/pages/build.adoc[build] · link:docs/modules/ROOT/pages/status.adoc[status]
+
+Original brief (archive): link:docs/ideas/non-frustrating-ui-shell-d-lang-actor-model.md[docs/ideas/…] · condensed: link:docs/modules/ROOT/pages/design-brief.adoc[design brief]
+
+== Packages
+
+[cols="1,3"]
+|===
+| Package | Role
+
+| `libbeam_d`
+| Core actor runtime: M:N fiber scheduler, lock-free MPSC mailbox, supervision (Phase 1–2)
+
+| `libglaze_2d`
+| 2D graphics abstraction (Blend2D bindings, command batching) — Phase 3 stub
+
+| `libshell_bridge`
+| OS / Erlang IPC and raw Win32/X11 bindings — Phase 4 stub
+
+| `actor_shell`
+| Shell executable composing the libraries — Phase 5 stub
+|===
+
+== Changelog
+
+See link:CHANGELOG.adoc[CHANGELOG.adoc].
+
+== Build
+
+Requirements: DMD or LDC2, DUB.
+
+[source,powershell]
+----
+dub test :libbeam_d
+dub build
+----
+
+Phase 1 focus is `libbeam_d`. Graphics and shell UI are stubs until later phases.
+
+== Implementation status
+
+* [x] Phase 1 — Fiber scheduler + actor mailbox (`libbeam_d`)
+* [ ] Phase 2 — Supervisor linking / restart strategies
+* [ ] Phase 3 — Blend2D / `libglaze_2d`
+* [ ] Phase 4 — `libshell_bridge` IPC + OS bindings
+* [ ] Phase 5 — ActorShell UI composition
+
+== Related
+
+* https://github.com/openshellorg/shell-architecture[shell-architecture] — structured-shell thesis
+* https://github.com/openshellorg/open-shell-org[open-shell-org] — docs hub / SOS
+
+== License
+
+MIT
