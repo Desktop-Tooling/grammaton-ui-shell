@@ -57,7 +57,7 @@ Phase 1 focus is `libbeam_d`. Graphics and shell UI are stubs until later phases
 == Related
 
 * https://github.com/openshellorg/shell-architecture[shell-architecture] — structured-shell thesis
-* https://github.com/openshellorg/open-shell-org[open-shell-org] — docs hub / SOS
+* https://github.com/openshellorg/docs[docs] — docs hub / SOS
 
 == License
 
