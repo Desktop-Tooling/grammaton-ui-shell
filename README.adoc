@@ -3,21 +3,13 @@
 :toclevels: 2
 :sectanchors:
 
-ifndef::env-github[]
+[[readme-top]]
+
 image:https://img.shields.io/github/contributors/openshellorg/actor-shell.svg?style=for-the-badge[Contributors,link=https://github.com/openshellorg/actor-shell/graphs/contributors]
 image:https://img.shields.io/github/forks/openshellorg/actor-shell.svg?style=for-the-badge[Forks,link=https://github.com/openshellorg/actor-shell/network/members]
 image:https://img.shields.io/github/stars/openshellorg/actor-shell.svg?style=for-the-badge[Stars,link=https://github.com/openshellorg/actor-shell/stargazers]
 image:https://img.shields.io/github/issues/openshellorg/actor-shell.svg?style=for-the-badge[Issues,link=https://github.com/openshellorg/actor-shell/issues]
 image:https://img.shields.io/github/license/openshellorg/actor-shell.svg?style=for-the-badge[License,link=https://github.com/openshellorg/actor-shell/blob/main/LICENSE]
-endif::[]
-
-ifdef::env-github[]
-image:https://img.shields.io/github/contributors/openshellorg/actor-shell.svg?style=for-the-badge[Contributors]
-image:https://img.shields.io/github/forks/openshellorg/actor-shell.svg?style=for-the-badge[Forks]
-image:https://img.shields.io/github/stars/openshellorg/actor-shell.svg?style=for-the-badge[Stars]
-image:https://img.shields.io/github/issues/openshellorg/actor-shell.svg?style=for-the-badge[Issues]
-image:https://img.shields.io/github/license/openshellorg/actor-shell.svg?style=for-the-badge[License]
-endif::[]
 
 = Actor Shell
 
@@ -34,10 +26,21 @@ Eliminate UI stutter and hangs by treating every UI component as an isolated lig
 
 Docs (Antora): link:docs/modules/ROOT/pages/index.adoc[overview] · link:docs/modules/ROOT/pages/architecture.adoc[architecture] · link:docs/modules/ROOT/pages/build.adoc[build] · link:docs/modules/ROOT/pages/status.adoc[status]
 
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
+
 == Built With
 
-* D (DMD or LDC2, DUB)
-* Fiber actor runtime (`libbeam_d`)
+* Language / build
+** link:https://dlang.org/[image:https://img.shields.io/badge/D-B03931?style=for-the-badge&logo=d&logoColor=white[D]]
+** DUB (`dmd` or `ldc2`)
+* Runtime
+** Fiber actor runtime (`libbeam_d`)
+
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
 
 == Getting Started
 
@@ -89,9 +92,29 @@ See link:CHANGELOG.adoc[CHANGELOG.adoc] and link:docs/modules/ROOT/pages/status.
 * https://github.com/openshellorg/shell-architecture[shell-architecture] — structured-shell thesis
 * https://github.com/openshellorg/docs[docs] — docs hub / SOS
 
+== Contributing
+
+Contributions are welcome. Open an issue before large changes.
+
+=== Top contributors
+
+++++
+<a href="https://github.com/openshellorg/actor-shell/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=openshellorg/actor-shell" alt="contributors" />
+</a>
+++++
+
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
+
 == License
 
 MIT — see link:LICENSE[LICENSE].
+
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
 
 == Contact
 
@@ -99,3 +122,7 @@ Open Shell Org — openshell@devcentr.org
 
 * Project: https://github.com/openshellorg/actor-shell
 * Site: https://openshellorg.github.io
+
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
