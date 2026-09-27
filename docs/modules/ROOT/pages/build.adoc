@@ -1,5 +1,5 @@
 = Build
-:description: How to build and test Actor Shell with DUB.
+:description: How to build and test Grammaton UI Shell with DUB.
 
 Requirements: DMD or LDC2, and DUB.
 

@@ -1,0 +1,6 @@
+= 2026-09-27 — Grammaton branding and logos
+
+== Summary
+
+Rebranded the project to **Grammaton UI Shell** after transfer to `Desktop-Tooling/grammaton-ui-shell`.
+Updated README and Antora docs to stress desktop UI shell (Cairo Shell peer) positioning, fixed GitHub links, and added primary plus themeable SVG marks with `BRANDING.adoc`.

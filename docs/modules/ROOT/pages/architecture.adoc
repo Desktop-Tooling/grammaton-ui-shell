@@ -1,7 +1,7 @@
 = Architecture
-:description: Package layout and implementation phases for Actor Shell.
+:description: Package layout and implementation phases for Grammaton UI Shell.
 
-Actor Shell is a DUB workspace with four packages.
+Grammaton UI Shell is a DUB workspace with four packages.
 The runtime is intentionally independent of graphics and OS windowing.
 
 == Packages

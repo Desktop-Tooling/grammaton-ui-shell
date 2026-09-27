@@ -6,6 +6,11 @@
 !dub.sdl
 !LICENSE
 
+!assets/
+!assets/**
+
+!BRANDING.adoc
+
 !docs/
 !docs/**
 

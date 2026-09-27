@@ -1,5 +1,5 @@
-name: actor-shell
-title: Actor Shell
+name: grammaton-ui-shell
+title: Grammaton UI Shell
 version: ~
 start_page: ROOT:index.adoc
 nav:

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Grammaton UI Shell (themeable)</title>
+  <desc id="desc">Icon mark using currentColor and CSS custom properties for host theming.</desc>
+  <style>
+    :root {
+      --grammaton-fg: currentColor;
+      --grammaton-accent: #3d5a80;
+      --grammaton-bg: transparent;
+    }
+    .grammaton-bg { fill: var(--grammaton-bg); }
+    .grammaton-frame { fill: var(--grammaton-accent); }
+    .grammaton-core { fill: var(--grammaton-fg); opacity: 0.92; }
+    .grammaton-glint { fill: var(--grammaton-fg); opacity: 0.35; }
+    .grammaton-cross { stroke: var(--grammaton-bg, #fff); stroke-width: 2.5; fill: none; stroke-linecap: square; }
+  </style>
+  <rect class="grammaton-bg" width="96" height="96" rx="8"/>
+  <g transform="translate(12 12)">
+    <path class="grammaton-frame" d="M0 36 L18 0 L54 0 L72 18 L72 54 L54 72 L18 72 L0 54 Z"/>
+    <path class="grammaton-core" d="M14 36 L27 9 L45 9 L58 22 L58 50 L45 63 L27 63 L14 36 Z"/>
+    <circle class="grammaton-glint" cx="36" cy="36" r="5"/>
+    <path class="grammaton-cross" d="M28 36 L44 36 M36 28 L36 44"/>
+  </g>
+</svg>

@@ -7,46 +7,64 @@ ifdef::env-github[]
 ++++
 <a id="readme-top"></a>
 <div align="center">
-<a href="https://github.com/openshellorg/actor-shell/graphs/contributors"><img src="https://img.shields.io/github/contributors/openshellorg/actor-shell.svg?style=for-the-badge" alt="Contributors"></a>
-<a href="https://github.com/openshellorg/actor-shell/network/members"><img src="https://img.shields.io/github/forks/openshellorg/actor-shell.svg?style=for-the-badge" alt="Forks"></a>
-<a href="https://github.com/openshellorg/actor-shell/stargazers"><img src="https://img.shields.io/github/stars/openshellorg/actor-shell.svg?style=for-the-badge" alt="Stars"></a>
-<a href="https://github.com/openshellorg/actor-shell/issues"><img src="https://img.shields.io/github/issues/openshellorg/actor-shell.svg?style=for-the-badge" alt="Issues"></a>
-<a href="https://github.com/openshellorg/actor-shell/blob/main/LICENSE"><img src="https://img.shields.io/github/license/openshellorg/actor-shell.svg?style=for-the-badge" alt="License"></a>
+<img src="assets/grammaton-ui-shell.svg" width="420" alt="Grammaton UI Shell" />
 <br />
-<h3 align="center">Actor Shell</h3>
+<a href="https://github.com/Desktop-Tooling/grammaton-ui-shell/graphs/contributors"><img src="https://img.shields.io/github/contributors/Desktop-Tooling/grammaton-ui-shell.svg?style=for-the-badge" alt="Contributors"></a>
+<a href="https://github.com/Desktop-Tooling/grammaton-ui-shell/network/members"><img src="https://img.shields.io/github/forks/Desktop-Tooling/grammaton-ui-shell.svg?style=for-the-badge" alt="Forks"></a>
+<a href="https://github.com/Desktop-Tooling/grammaton-ui-shell/stargazers"><img src="https://img.shields.io/github/stars/Desktop-Tooling/grammaton-ui-shell.svg?style=for-the-badge" alt="Stars"></a>
+<a href="https://github.com/Desktop-Tooling/grammaton-ui-shell/issues"><img src="https://img.shields.io/github/issues/Desktop-Tooling/grammaton-ui-shell.svg?style=for-the-badge" alt="Issues"></a>
+<a href="https://github.com/Desktop-Tooling/grammaton-ui-shell/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Desktop-Tooling/grammaton-ui-shell.svg?style=for-the-badge" alt="License"></a>
+<br />
+<h3 align="center">Grammaton UI Shell</h3>
 <p align="center">
-Non-frustrating Windows/Linux UI shell on an Erlang-style actor runtime (D).<br />
-<a href="https://github.com/openshellorg/actor-shell/blob/main/docs/modules/ROOT/pages/index.adoc"><strong>Explore the docs »</strong></a><br /><br />
-<a href="https://github.com/openshellorg/actor-shell/issues">Report Bug</a>
+Desktop UI shell (Cairo Shell peer) on an Erlang-style actor runtime in D — not a terminal or CLI shell.<br />
+<a href="https://github.com/Desktop-Tooling/grammaton-ui-shell/blob/main/docs/modules/ROOT/pages/index.adoc"><strong>Explore the docs »</strong></a><br /><br />
+<a href="https://github.com/Desktop-Tooling/grammaton-ui-shell/issues">Report Bug</a>
 &middot;
-<a href="https://github.com/openshellorg/actor-shell/issues">Request Feature</a>
+<a href="https://github.com/Desktop-Tooling/grammaton-ui-shell/issues">Request Feature</a>
 </p>
 </div>
 ++++
 endif::[]
 
 ifndef::env-github[]
-image:https://img.shields.io/github/contributors/openshellorg/actor-shell.svg?style=for-the-badge[Contributors,link=https://github.com/openshellorg/actor-shell/graphs/contributors]
-image:https://img.shields.io/github/forks/openshellorg/actor-shell.svg?style=for-the-badge[Forks,link=https://github.com/openshellorg/actor-shell/network/members]
-image:https://img.shields.io/github/stars/openshellorg/actor-shell.svg?style=for-the-badge[Stars,link=https://github.com/openshellorg/actor-shell/stargazers]
-image:https://img.shields.io/github/issues/openshellorg/actor-shell.svg?style=for-the-badge[Issues,link=https://github.com/openshellorg/actor-shell/issues]
-image:https://img.shields.io/github/license/openshellorg/actor-shell.svg?style=for-the-badge[License,link=https://github.com/openshellorg/actor-shell/blob/main/LICENSE]
+image:assets/grammaton-ui-shell.svg[Grammaton UI Shell,420,align=center]
 
-= Actor Shell
+image:https://img.shields.io/github/contributors/Desktop-Tooling/grammaton-ui-shell.svg?style=for-the-badge[Contributors,link=https://github.com/Desktop-Tooling/grammaton-ui-shell/graphs/contributors]
+image:https://img.shields.io/github/forks/Desktop-Tooling/grammaton-ui-shell.svg?style=for-the-badge[Forks,link=https://github.com/Desktop-Tooling/grammaton-ui-shell/network/members]
+image:https://img.shields.io/github/stars/Desktop-Tooling/grammaton-ui-shell.svg?style=for-the-badge[Stars,link=https://github.com/Desktop-Tooling/grammaton-ui-shell/stargazers]
+image:https://img.shields.io/github/issues/Desktop-Tooling/grammaton-ui-shell.svg?style=for-the-badge[Issues,link=https://github.com/Desktop-Tooling/grammaton-ui-shell/issues]
+image:https://img.shields.io/github/license/Desktop-Tooling/grammaton-ui-shell.svg?style=for-the-badge[License,link=https://github.com/Desktop-Tooling/grammaton-ui-shell/blob/main/LICENSE]
 
-Non-frustrating Windows/Linux UI shell on an Erlang-style actor runtime (D).
+= Grammaton UI Shell
 
-link:https://github.com/openshellorg/actor-shell/issues[Report Bug] ·
-link:https://github.com/openshellorg/actor-shell/issues[Request Feature]
+Desktop UI shell (Cairo Shell peer) on an Erlang-style actor runtime in D — not a terminal or CLI shell.
+
+link:https://github.com/Desktop-Tooling/grammaton-ui-shell/issues[Report Bug] ·
+link:https://github.com/Desktop-Tooling/grammaton-ui-shell/issues[Request Feature]
 endif::[]
 
 == About The Project
 
-Non-frustrating Windows/Linux UI shell built on an Erlang-style actor runtime in native D.
+**Grammaton UI Shell** is a non-frustrating Windows/Linux *desktop* UI shell: window management, compositing, and shell chrome in the same product category as Cairo Shell and similar structured desktops.
+It is built on an Erlang-style actor runtime in native D—not a REPL, command interpreter, or POSIX login shell.
 
 Eliminate UI stutter and hangs by treating every UI component as an isolated lightweight process (fiber) under a supervision tree.
 
-Docs (Antora): link:docs/modules/ROOT/pages/index.adoc[overview] · link:docs/modules/ROOT/pages/architecture.adoc[architecture] · link:docs/modules/ROOT/pages/build.adoc[build] · link:docs/modules/ROOT/pages/status.adoc[status]
+Docs (Antora): link:docs/modules/ROOT/pages/index.adoc[overview] · link:docs/modules/ROOT/pages/architecture.adoc[architecture] · link:docs/modules/ROOT/pages/build.adoc[build] · link:docs/modules/ROOT/pages/status.adoc[status] · link:BRANDING.adoc[branding]
+
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
+
+== Name and lore
+
+*Short name:* **Grammaton** — the supervised desktop shell itself.
+
+The name nods to *Equilibrium*: Grammaton Clerics who enforce calm, precise order, contrasted with the Overseer's broader gaze.
+This project applies that idea to the desktop—many small, disciplined actors under supervision instead of one brittle UI thread—then returns to engineering: fibers, mailboxes, and a Cairo Shell–class shell on D.
+
+Logos and themeable marks: link:BRANDING.adoc[BRANDING.adoc].
 
 ++++
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -111,8 +129,8 @@ See link:CHANGELOG.adoc[CHANGELOG.adoc] and link:docs/modules/ROOT/pages/status.
 
 == Related
 
-* https://github.com/openshellorg/shell-architecture[shell-architecture] — structured-shell thesis
-* https://github.com/openshellorg/docs[docs] — docs hub / SOS
+* https://github.com/openshellorg/shell-architecture[shell-architecture] — OpenShellOrg structured-shell thesis (related design canon; this repo lives under Desktop-Tooling)
+* https://github.com/openshellorg/docs[OpenShellOrg docs] — ecosystem docs hub
 
 == Contributing
 
@@ -121,8 +139,8 @@ Contributions are welcome. Open an issue before large changes.
 === Top contributors
 
 ++++
-<a href="https://github.com/openshellorg/actor-shell/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=openshellorg/actor-shell" alt="contributors" />
+<a href="https://github.com/Desktop-Tooling/grammaton-ui-shell/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Desktop-Tooling/grammaton-ui-shell" alt="contributors" />
 </a>
 ++++
 
@@ -140,10 +158,8 @@ MIT — see link:LICENSE[LICENSE].
 
 == Contact
 
-Open Shell Org — openshell@devcentr.org
-
-* Project: https://github.com/openshellorg/actor-shell
-* Site: https://openshellorg.github.io
+* Project: https://github.com/Desktop-Tooling/grammaton-ui-shell
+* Branding: link:BRANDING.adoc[BRANDING.adoc]
 
 ++++
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
