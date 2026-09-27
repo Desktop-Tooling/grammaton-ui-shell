@@ -1,12 +1,14 @@
 = Design brief
-:description: Condensed original brief for the non-frustrating UI shell.
+:description: Condensed original brief for Grammaton UI Shell (desktop UI shell, not a CLI).
 
-This page is the maintained AsciiDoc summary of the original project brief.
+This page is the maintained AsciiDoc summary of the original project brief for **Grammaton UI Shell**.
 The full archived markdown lives in the repository at `docs/ideas/non-frustrating-ui-shell-d-lang-actor-model.md`.
 
 == Core goal
 
-Build a Windows/Linux UI shell that eliminates stutter and hangs by implementing an Erlang-style actor system in native D.
+Build a Windows/Linux *desktop* UI shell (Cairo Shell peer category) that eliminates stutter and hangs by implementing an Erlang-style actor system in native D.
+This is not a terminal, REPL, or command-line shell.
+
 Every UI component is an isolated lightweight process (fiber) managed by a supervision tree.
 
 Erlang's BEAM runtime (ERTS) is a useful reference for scheduler and mailbox ideas; this project reimplements the needed pieces in D rather than embedding OTP for the UI path.

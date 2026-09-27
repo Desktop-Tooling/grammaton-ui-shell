@@ -1,0 +1,57 @@
+= Grammaton UI Shell — branding
+:description: Logo assets and themeable SVG usage for hosts and docs.
+
+== Assets
+
+[cols="1,3"]
+|===
+| File | Use
+
+| link:assets/grammaton-ui-shell.svg[`grammaton-ui-shell.svg`]
+| Primary logo (mark + wordmark). README banner and docs headers.
+
+| link:assets/grammaton-ui-shell.themeable.svg[`grammaton-ui-shell.themeable.svg`]
+| Square icon mark for in-app chrome, splash screens, and host theming.
+
+| link:assets/grammaton-ui-shell-icon.svg[`grammaton-ui-shell-icon.svg`]
+| Compact mono mark (~32×32) for favicons and taskbar slots.
+|===
+
+== Themeable SVG
+
+`grammaton-ui-shell.themeable.svg` is designed for recoloring without editing paths.
+
+* Set CSS custom properties on a parent element (or inline on the embedded `<svg>`):
+
+[source,css]
+----
+.grammaton-brand {
+  --grammaton-fg: #0d1b2a;
+  --grammaton-accent: #3d5a80;
+  --grammaton-bg: #e0fbfc;
+  color: var(--grammaton-fg); /* drives currentColor where used */
+}
+----
+
+* `--grammaton-fg` — inner geometry and glints (falls back to `currentColor` semantics via opacity layers).
+* `--grammaton-accent` — outer angular frame (cleric/order motif).
+* `--grammaton-bg` — optional plate behind the mark; crosshair strokes use this for contrast.
+
+Embed inline so styles apply:
+
+[source,html]
+----
+<div class="grammaton-brand" style="--grammaton-accent: #5c4d7d;">
+  <!-- paste SVG contents or use object/img with a wrapper that sets variables -->
+</div>
+----
+
+For static hosts (GitHub, Antora), use the primary SVG or reference the icon with explicit `fill` in `grammaton-ui-shell-icon.svg`.
+
+== Naming
+
+* Product name: **Grammaton UI Shell**
+* Short name: **Grammaton** (the shell runtime and window manager composition)
+* Repository: https://github.com/Desktop-Tooling/grammaton-ui-shell
+
+The marks are original geometry inspired by themes of order and supervision—not reproductions of film assets or third-party trademarks.

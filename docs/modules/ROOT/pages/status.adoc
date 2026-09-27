@@ -1,5 +1,5 @@
 = Status
-:description: Implementation status for Actor Shell phases.
+:description: Implementation status for Grammaton UI Shell phases.
 
 * [x] Phase 1 — Fiber scheduler + actor mailbox (`libbeam_d`)
 * [ ] Phase 2 — Supervisor linking / restart strategies
@@ -7,4 +7,4 @@
 * [ ] Phase 4 — `libshell_bridge` IPC + OS bindings
 * [ ] Phase 5 — ActorShell UI composition
 
-Source: https://github.com/openshellorg/actor-shell
+Source: https://github.com/Desktop-Tooling/grammaton-ui-shell
