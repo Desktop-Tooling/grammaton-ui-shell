@@ -28,3 +28,8 @@ packages/**/*.lib
 packages/**/*.a
 packages/**/*.dll
 packages/**/bin/
+!/.github/
+!/.github/workflows/
+!/.github/workflows/encoding-guard.yml
+!/.editorconfig
+!/.gitattributes
